@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="./assets/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <title>Computer Network Security</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/offcanvas-navbar/">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css3/offcanvas-navbar.css" rel="stylesheet">
+  </head>
+  <body class="bg-body-tertiary">
+    
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">OTP</a>
+    <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/entry">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/licenseOtp">License</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <button class="btn btn-outline-fail" type="submit"><a class="nav-link px-2" href="/LogOut" >LogOut</a></button>
+      </form>
+    </div>
+  </div>
+</nav>
+<br>
+<main class="container">
+  <br>
+  <div class="d-flex align-items-center p-3 my-3 text-black bg-purple rounded shadow-sm">
+    <div class="lh-1">
+        <small><i class="fa-solid fa-lock"></i><strong></strong> Make It Secured</strong></small>
+    </div>
+  </div>
+  </div>
+  <br>
+  <div class="row align-items-md-stretch">
+    <div class="col-md-6">
+      <div class="h-80 p-5 bg-body-tertiary border rounded-3  bform">
+        <form  action="/otp.ejs" method="post">
+          <div class="form-floating">
+            <input class="form-control" type="text"  name="encrypte_input" id="encrypte_input"   placeholder="input">
+            <i class="fa-solid fa-lock-keyhole"></i>
+          </div>
+          <br>
+          <div class="form-floating">
+            <strong class="text-gray-dark">No Need of key.</strong><p>keys will be generated  Automatically for you</p>
+            <!-- <input class="form-control" type="text" placeholder="key" name="encrypte_key" id="encrypte_key"> -->
+          </div>
+          <br>
+          <button class="w-100 btn btn-lg btn-lg btn-dark" name="btnID" value="Encrypte">Encrypte</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="h-80 p-5 bg-body-tertiary border rounded-3 bform">
+          <div class="form-floating">
+            <input type="text" class="form-control" placeholder="input" id="encrypted_message"  name="encrypted_message">
+          </div>
+          <br>
+          <br>
+          <div class="form-floating">
+             <input type="text"  class="form-control" id="decryption_key"  placeholder="key" name="decryption_key">
+          </div>
+          <br>
+          <br>
+          <button class="w-100 btn btn-lg btn-lg btn-dark" name="btnID" value="Decrypte">Decrypte</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br>
+  <form action="/entry" method="post">
+    <small class="d-block text-end mt-3">
+    <button class="w-20 btn btn-lg btn-dark"  name="btn" value="des_encry">back</button>
+  </small>
+</form>
+</main>
+<br>
+<br>
+<div class="container">
+  <footer class="py-3 my-4">
+    <p class="text-center text-body-secondary">&copy; 2015 Ec Network Security</p>
+  </footer>
+</div>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+<!-- <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cipher</title>
+    </head>
+    <body>
+        <form action="/otp.ejs" method="post">
+            <h2>encrypte</h2>
+            <input type="text"  name="encrypte_input" placeholder="input">
+            <br>
+            <input type="text" placeholder="key-numbers-only" name="encrypte_key">
+            <br>
+            <button name="btnID" value="Encrypte">Encrypte</button>
+            <br>
+            <h2>decrypte</h2>
+            <input type="text" placeholder="input" name="encrypted_message">
+            <br>
+            <input type="text" placeholder="one time pad key" name="decryption_key">
+            <br>
+            <button name="btnID" value="Decrypte">Decrypte</button>
+        </form>
+    </body>
+</html> --> -->

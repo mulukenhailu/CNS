@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="./assets/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <title>Offcanvas navbar template · Bootstrap v5.3</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/offcanvas-navbar/">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css3/offcanvas-navbar.css" rel="stylesheet">
+  </head>
+  <body class="bg-body-tertiary">
+    
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">TripleDES</a>
+    <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/entry">Home</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <button class="btn btn-outline-fail" type="submit"><a class="nav-link px-2" href="/LogOut" >LogOut</a></button>
+      </form>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<main class="container">
+    <div class="my-3 p-3 bg-body rounded shadow-sm">
+        <h6 class="border-bottom pb-2 mb-0"></h6>
+        <div class="d-flex text-body-secondary pt-3">
+          <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+            <div class="d-flex justify-content-between">
+              <p><strong class="text-gray-dark"> <i class="fa-sharp fa-solid fa-face-smile"></i>Hey there! </strong>
+                 <br>
+                    We've created this awesome encryption and decryption software for our 
+                    group project in the "Computer Network and Security" course of 2023/2015ec. 
+                    The main goal of this software is to demonstrate encryption and decryption in a user-friendly way,
+                    with a graphical interface that works smoothly both in the front end and back end. 
+                    Our group is made up of four talented members: Surafel Destaw, Nuredin Bedru, Solomon Asregdew, 
+                    and Muluken Hailu.
+                    <br>
+                    We're happy to inform you that this software is released under an open-source license, 
+                    which means that anyone can use it without any restrictions. Feel free to explore and 
+                    utilize it for your own projects or educational purposes. We hope it proves to be a valuable resource for you!
+               </p>
+            </div>
+            <span class="d-block"></span>
+          </div>
+        </div>
+        <div class="d-flex text-body-secondary pt-3">
+            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+              <div class="d-flex justify-content-between">
+                <p><strong class="text-gray-dark"> <a href="https://github.com/9trocode/node_triple_des/blob/master/LICENSE">Get the source code</a></strong></p>  
+              </div>
+              <span class="d-block"></span>
+            </div>
+          </div>
+ <div>
+    <br><br>
+    <br>
+    <br>
+ </div>
+ <br>
+  <form action="/back_otp" method="post">
+    <small class="d-block text-end mt-3">
+    <button class="w-20 btn btn-lg btn-dark"  name="btn" value="des_encry">back</button>
+  </small>
+</form>
+</main>
+<br>
+<br>
+<div class="container">
+  <footer class="py-3 my-4">
+    <p class="text-center text-body-secondary">&copy; 2015 Ec Network Security</p>
+  </footer>
+</div>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+
